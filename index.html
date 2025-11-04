@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobil Second</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Mobil Second</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#catalog">Katalog</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <h2>Selamat datang di Mobil Second Bandung</h2>
+        <p>Temukan mobil impian Anda dengan berbagai pilihan terbaik!</p>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <h2>Mobil Second</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="images/avanza.webp" alt="Car 1">
+                <h3>Toyota Avanza</h3>
+                <p>Harga: Rp 250.000.000</p>
+                <button class="btn-details" onclick="showDetails('toyota')">Lihat Detail</button>
+            </div>
+
+            <div class="car-item">
+                <img src="images/civic.webp" alt="Car 2">
+                <h3>Honda Civic</h3>
+                <p>Harga: Rp 450.000.000</p>
+                <button class="btn-details" onclick="showDetails('honda')">Lihat Detail</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <p>Jika Anda tertarik dengan mobil tertentu, hubungi kami melalui email: <a href="mailto:mobilsecondbandung@gmail.com">mobilsecondbandung@gmail.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mobil Second. Semua hak cipta dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
