@@ -13,22 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checkout the repository
     - name: Checkout code
       uses: actions/checkout@v2
 
-    # Set up Docker (optional, if you want to use Docker)
     - name: Set up Docker
       uses: docker/setup-buildx-action@v2
 
-    # Build Docker image (if using Docker)
     - name: Build Docker image
       run: |
         docker build -t my-website .
 
-    # Optional: Run tests or any build steps you need
 
-    # Deploy static files to a hosting service (like GitHub Pages)
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.1.0
       with:
